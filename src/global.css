@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+button {
+  height: 35px;
+  width: 120px;
+  border-radius: 30px;
+  border: none;
+  margin: 5px;
+  background-color: white;
+  font-family: "Raleway", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: 0.35s;
+
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: oklch(68.5% 0.169 237.323);
+  color: white;
+  transform: scale(105%) rotate(-5deg);
+  transition: 0.35s;
+}
+
+/* Fonts */
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 20px; /* match left padding */
+  bottom: 10px; /* adjust to place it under the text */
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.5s ease;
+}
+
+a:hover::after {
+  width: calc(100% - 40px); /* total width minus left and right padding */
+}
