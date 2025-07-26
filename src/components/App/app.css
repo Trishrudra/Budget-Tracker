@@ -29,8 +29,8 @@ header {
 .header_section {
   background-color: oklch(68.5% 0.169 237.323);
   width: 100vw;
-  height: calc(100vh - 200px);
-  padding: 50px;
+  height: calc(100vh - 150px);
+  padding-top: 50px;
   color: white;
   /* height: 40px; */
   display: flex;
@@ -44,7 +44,7 @@ header {
 }
 
 .header_section_span {
-  font-size: 300px;
+  font-size: 100px;
   margin: 0px;
 }
 
